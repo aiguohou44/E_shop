@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="spring4.2.4-core">
+    <CLASSES>
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-core/commons-logging-1.2.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-core/spring-beans-4.2.4.RELEASE.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-core/spring-context-4.2.4.RELEASE.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-core/spring-core-4.2.4.RELEASE.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-core/spring-expression-4.2.4.RELEASE.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-core/spring-test-4.2.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

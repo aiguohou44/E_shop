@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+  <session-factory>
+    <!-- 数据库JDBC驱动类名 -->
+    <!--<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>-->
+    <!--<property name="connection.url">jdbc:mysql://localhost:3306/shop?serverTimezone=Hongkong</property>-->
+    <!--&lt;!&ndash;数据库用户名配置&ndash;&gt;-->
+    <!--<property name="connection.username">root</property>-->
+    <!--&lt;!&ndash;数据库密码配置&ndash;&gt;-->
+    <!--<property name="connection.password">QAZWSX123456@</property>-->
+
+    <!-- 数据库方言 -->
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <!-- ddl语句自动建表 -->
+    <property name="hbm2ddl.auto">update</property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+
+    <!-- 如果要使用sessionFactory.getCurrentSession就需要如下配置 -->
+    <!-- 在集成环境下如Jboss，那么下面的thread需要改成jta，thread在非集成环境下(如Jdbc)使用-->
+    <!--<property name="current_session_context_class">jta</property>-->
+
+    <!--jdbc.fetch_size是指Hibernate每次从数据库中取出并放到JDBC的Statement中的记录条数。Fetch Size设的越大，读数据库的次数越少，速度越快，Fetch Size越小，读数据库的次数越多，速度越慢-->
+    <property name="jdbc.fetch_size">50</property>
+    <!--jdbc.batch_size是指Hibernate批量插入,删除和更新时每次操作的记录数。Batch Size越大，批量操作的向数据库发送Sql的次数越少，速度就越快，同样耗用内存就越大-->
+    <property name="jdbc.batch_size">23</property>
+    <!--jdbc.use_scrollable_resultset是否允许Hibernate用JDBC的可滚动的结果集。对分页的结果集。对分页时的设置非常有帮助-->         <property name="jdbc.use_scrollable_resultset">false</property>
+    <!--connection.useUnicode连接数据库时是否使用Unicode编码-->
+    <property name="Connection.useUnicode">true</property>
+
+    <!--connection.characterEncoding连接数据库时数据的传输字符集编码方式，最好设置为utf-8，用gb2312有的字符不全-->
+    <property name="connection.characterEncoding">utf-8</property>
+      <property name="connection.url">jdbc:mysql://localhost:3306/shop</property>
+      <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+      <!-- 注册ORM映射文件 -->
+
+    <mapping class="com.model.Category"/>
+      <mapping class="com.model.Account"/>
+      <mapping class="com.model.Product"/>
+
+      <!-- 如果要使用c3p0连接池配置，需要导入c3p0的包 -->
+    <!--
+          <property name="hibernate.connection.provider_class">
+             org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+         </property>
+         <property name="hibernate.c3p0.min_size">5</property>
+         <property name="hibernate.c3p0.max_size">20</property>
+         <property name="hibernate.c3p0.timeout">300</property>
+         <property name="hibernate.c3p0.max_statements">100</property>
+         <property name="hibernate.c3p0.idle_test_period">3000</property>
+     -->
+
+
+
+
+  </session-factory>
+</hibernate-configuration>

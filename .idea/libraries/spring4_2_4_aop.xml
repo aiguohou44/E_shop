@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="spring4.2.4-aop">
+    <CLASSES>
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aopalliance-1.0.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectjweaver-1.7.1.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/spring-aop-4.2.4.RELEASE.jar!/" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectj-1.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectj-1.7.1.jar!/doc/aspectj5rt-api" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectj-1.7.1.jar!/doc/runtime-api" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectj-1.7.1.jar!/doc/weaver-api" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectj-1.7.1.jar!/doc/examples" />
+      <root url="jar://E:/S2SH_JAR/spring4.2.4-aop/aspectj-1.7.1.jar!/doc/examples/ltw" />
+    </SOURCES>
+  </library>
+</component>
