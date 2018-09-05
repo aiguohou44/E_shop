@@ -54,7 +54,7 @@ public class ProductAction extends BaseAction<Product>  {
     public void update() throws IOException {
         System.out.println("awdaw88888***************");
         String pic = fileUpload.uploadFile(fileImage);
-        System.out.println("********");
+        System.out.println("******** 我的第一次git提交");
 
         model.setPic(pic);
         model.setDate(new Date());
