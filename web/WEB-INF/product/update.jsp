@@ -21,7 +21,7 @@
 
             var dg = parent.$("iframe[title='商品管理']").get(0).contentWindow.$("#dg");
 
-
+            //在修改一个文件
             //对管理员的下拉列表框进行远程加载
             $("#cc").combobox({
                 //将请求发送给accountAction中的query方法处理，这里需要将处理好的数据返回到这边来显示了 ，所以后台需要将数据打包成json格式发过来
@@ -82,7 +82,7 @@
     </script>
 
 <body>
-    <form id="ff" method="post">
+    <form id="ff" method="post"  enctype="multipart/form-data">
 
         <div>
             <label >商品名称:</label> <input type="text" name="name" />
